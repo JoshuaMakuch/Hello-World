@@ -8,6 +8,7 @@ Module Program
         Console.WriteLine($"You Said: {message}?")
         Console.WriteLine("Is that right?")
         Dim UsrConfirm = Console.ReadLine()
+        UsrConfirm = UsrConfirm.ToLower()
         If (UsrConfirm = "yes") Then
             Console.WriteLine("Awesome lol!")
         Else
